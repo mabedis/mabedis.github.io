@@ -21,6 +21,11 @@ main {
     padding: 20px;
 }
 
+#summary {
+    flex: 1;
+    text-align: center;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
 }
@@ -28,6 +33,12 @@ h1, h2, h3, h4, h5, h6 {
 /* Header styles */
 header h1 {
     margin: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc; /* Add a horizontal line separator */
+    margin: 20px 150px;
 }
 
 /* Footer styles */
