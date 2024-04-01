@@ -5,6 +5,48 @@ body {
     line-height: 1.6;
 }
 
+.container {
+    display: flex;
+    flex: 1;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.left-column {
+    flex: 1;
+    padding: 20px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+}
+
+.right-column {
+    flex: 1;
+    margin-left: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.quote {
+    /* font-size: 24px;
+    margin-bottom: 20px; */
+    position: relative;
+    font-size: 20px;
+    font-style: italic;
+    color: #333;
+    padding-left: 40px;
+    text-align: center;
+}
+
+.quote:before {
+    content: "\201C"; /* Unicode for left double quotation mark */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 4em;
+    line-height: 0.8em;
+    color: #999;
+}
+
 header, footer {
     background-color: #333;
     color: #fff;
@@ -22,8 +64,11 @@ main {
 }
 
 #summary {
+    font-size: 18px;
     flex: 1;
     text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 h1, h2, h3, h4, h5, h6 {
